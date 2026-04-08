@@ -1,0 +1,25 @@
+services:
+  - type: web
+    name: smart-invoice-backend
+    env: python
+    region: oregon
+    plan: free
+    rootDir: backend
+    buildCommand: ./build.sh
+    startCommand: gunicorn config.wsgi
+    envVars:
+      - key: DATABASE_URL
+        fromDatabase:
+          name: smart-invoice-db
+          property: connectionString
+      - key: SECRET_KEY
+        generateValue: true
+      - key: DEBUG
+        value: "False"
+      - key: ALLOWED_HOSTS
+        value: "*" # Replace with your render.com URL once deployed
+
+databases:
+  - name: smart-invoice-db
+    plan: free
+    region: oregon
