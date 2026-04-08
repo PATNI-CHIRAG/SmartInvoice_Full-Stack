@@ -42,7 +42,7 @@ This application allows users to create, view, and manage invoices with a clean 
 - Django REST Framework
 
 ### 🗄 Database
-- PostgreSQL
+- SQlite
 
 ### 🌐 Deployment 
 - Vercel (Frontend)
