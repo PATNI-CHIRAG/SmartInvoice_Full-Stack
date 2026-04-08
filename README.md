@@ -6,7 +6,7 @@ This application allows users to create, view, and manage invoices with a clean 
 ---
 
 ## 🚀 Live Demo
-🔗 https://invoice-three-lilac.vercel.app/
+🔗 https://smart-invoice-full-stack-f9cm.vercel.app/
 
 ---
 
